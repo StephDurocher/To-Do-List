@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.table {
+  width: 600px;
+}
