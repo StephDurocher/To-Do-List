@@ -16,29 +16,59 @@
   <body>
     <div class="container">
       <h1>To Do List</h1>
-
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Needs to get done</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Pick up RX from pharmacy</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Take Max to the vet at 9:30am</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Buy dog food and treats</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="main-wrapper" id="wrapper">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Add new task here..."
+            aria-label="Text input with segmented dropdown button"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            id="addButton"
+          >
+            Add Item
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">▾</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Add task</a></li>
+            <li><a class="dropdown-item" href="#">Add to bottom of list</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <table class="table">
+          <thead class="thead">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Needs to get done</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Pick up RX from pharmacy</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Take Max to the vet at 9:30am</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Buy dog food and treats</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <script src="./sources/script.js"></script>
   </body>
